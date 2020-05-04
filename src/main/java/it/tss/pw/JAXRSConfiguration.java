@@ -1,4 +1,4 @@
-package com.mycompany.pw.feira;
+package it.tss.pw;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
