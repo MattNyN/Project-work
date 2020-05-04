@@ -24,14 +24,13 @@ public class User implements Serializable {
     public User() {
     }
 
-    public User(Long id, String usr, String pwd, LocalDate birthDate) {
+    public User(Long id, String usr, String pwd) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
         this.usr = usr;
         this.pwd = pwd;
-        this.birthDate = birthDate;
     }
+
+   
 
    
     
