@@ -32,15 +32,21 @@ public class UserStore {
         return users.values();
     }
 
+    public User find (Long id){
+        return users.get(id);
+    }
     public User create(User u) {
+        System.out.println("create user"+ u);
         return users.putIfAbsent(u.getId(), u);
     }
 
     public User update(User u) {
+        System.out.println("update user" + u);
         return users.putIfAbsent(u.getId(), u);
     }
 
     public User delete(long id) {
+       System.out.println("delete user"+ id);
         return users.remove(id);
 
     }
